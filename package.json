@@ -2,12 +2,21 @@
   "name": "backend-by-chai-aor-code",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js", 
-  "scripts": {"dev":"nodemon src/index.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "mohit kumar",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.2"
+  }
 }
