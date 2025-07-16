@@ -45,7 +45,7 @@ route("/updateAvatar").
 patch(verifyJWT, upload.single("avatar"), updateAvatar)
 router.
 route("/updateCoverImage").
-patch(verifyJWT, upload.single("/coverimage"), updateCoverImage)
+patch(verifyJWT, upload.single("coverimage"), updateCoverImage)
 router.
 route("/getWatchHistory").
 get(verifyJWT, getWatchHistory)
